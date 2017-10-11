@@ -1,0 +1,70 @@
+/* style.css */
+body{
+  margin: 0;
+  background: rgb(245,245,245);
+  color: #785964;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+h1{
+  font-family: 'Indie Flower', cursive;
+  color: #98DFAF;
+  font-weight: lighter;
+  font-size: 60px;
+}
+h2 {
+  font-family: 'Nova Flat', cursive;
+  color: #A3A5A7;
+  font-weight: lighter;
+  font-size: 20px;
+}
+a {
+  color: #82A7A6;
+}
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+#banner{
+  text-align: center;
+  background-image: url("images/Jar2.jpeg");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+#banner h1 {
+  color: white;
+  font-size: 50px;
+}
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+#banner a {
+	color: white;
+	opacity: 0.8;
+	font-size: 30px;
+  	font-weight: lighter;
+}
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}
+.card{
+  padding: 50px;
+  font-weight: lighter;
+}
+
+#footer a{
+	color: pink;
+	font-size: 20px;
+}
+
+#footer a:hover{
+	color: blue;
+	font-size: 50px;
+}

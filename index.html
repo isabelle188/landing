@@ -13,9 +13,9 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
 	<!-- Permet au site d'être accessible pour des users de Edge -->
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<!-- Calcule la taile de l'écran -->
-	<title>Je fais le tri</title>
+	<title>Porsche Design Passion</title>
 	<!-- Titre qui apparaît sur l'onglet de navigation -->
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nova+Flat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mukta|Permanent+Marker" rel="stylesheet">
 	<!-- Lien qui permet d'aller puiser les fonts spécifiques de Google -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- Lien qui permet de récupérer des icones dans Fontawesome -->
@@ -28,16 +28,18 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
 <body> <!-- Le body est ce qui apparaît sur ma page -->
     <div id="banner">
     <!-- l'attribut banner permet de créer la "bannière" du site -->
-    	<h1>Je fais le tri</h1>
+    	<h1>Porsche Design Passion</h1>
     	<!-- ceci est le titre qui apparaît dans ma bannière  -->
-    	<p>Le blog qui allège vos pouvelle !</p>
+    	<p>From 356 to 911</p>
     	<!-- Le p permet de créer un paragraphe -->
-    	<p>
-      	<a href="http://jefaisletri.fr" target="_blank" class="btn btn-info">jefaisletri</a>
-   		</p>
-   		<!-- Ici on a créée un paragraphe contenant un lien. Le href indique le lien en tant que tel, target indique au programme d'ouvrir le lien dans une nouvelle page ma class provient de bootstrap (le code a été copié collé directement, et le lien vers bootscrap correctement défini dans le head) -->
-    	<img src="images/Logo poubelle.png" alt="picture description" width="100">
-    	<!-- voici comment insérer une image src indique le fichier source, alt indique xxxxxxxxxxxxxxxx et width xxxxxxxxxx -->
+    	<!-- Ici on pourrait créer un paragraphe contenant un lien. on le coderait comme suit : 
+			<p>
+			<a href="http://#" target="_blank" class="btn btn-info">Texte que je veux faire apparaître</a>
+			</p>
+    	Le href indique le lien en tant que tel, target indique au programme d'ouvrir le lien dans une nouvelle page ma class provient de bootstrap (le code a été copié collé directement, et le lien vers bootscrap correctement défini dans le head) -->
+    	<!-- On pourrait aussi insérer comme ceci une image :
+    		<img src="images/Logo poubelle.png" alt="picture description" width="100">
+    	src indique le fichier source, alt indique xxxxxxxxxxxxxxxx et width xxxxxxxxxx -->
     </div>
 
     <div class="container">
@@ -72,8 +74,31 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
     			</div>
     		</div>
     	</div>
+    	<div class="row">
+    		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+    		<div id="wufoo-zynwe5v1duvrwk">
+    		Fill out my <a href="https://isabelle188.wufoo.com/forms/zynwe5v1duvrwk">online form</a>.
+    		</div>
+    		<script type="text/javascript">var zynwe5v1duvrwk;(function(d, t) {
+    		var s = d.createElement(t), options = {
+    		'userName':'isabelle188',
+    		'formHash':'zynwe5v1duvrwk',
+    		'autoResize':true,
+    		'height':'401',
+    		'async':true,
+    		'host':'wufoo.com',
+    		'header':'show',
+    		'ssl':true};
+    		s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+    		s.onload = s.onreadystatechange = function() {
+    		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+    		try { zynwe5v1duvrwk = new WufooForm();zynwe5v1duvrwk.initialize(options);zynwe5v1duvrwk.display(); } catch (e) {}};
+    		var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    		})(document, 'script');</script>
+    		</div>
+    	</div>
     </div>
-   
+  
     <div id="footer">
     <p>This is a playground landing ©Le Wagon</p>
     <ul class="list-inline">

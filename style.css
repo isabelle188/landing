@@ -1,4 +1,4 @@
-/* style.css */
+/* On peut aussi insérer des commentaires dans style.css en utilisant ce format */
 body{
   margin: 0;
   background: rgb(245,245,245);
@@ -7,14 +7,13 @@ body{
   font-family: Helvetica;
 }
 h1{
-  font-family: 'Indie Flower', cursive;
-  color: #98DFAF;
-  font-weight: lighter;
+  font-family: 'Permanent Marker', cursive;
+  color: #D45113;
   font-size: 60px;
 }
 h2 {
-  font-family: 'Nova Flat', cursive;
-  color: #A3A5A7;
+  font-family: 'Mukta', sans-serif;
+  color: #F9A03F;
   font-weight: lighter;
   font-size: 20px;
 }
@@ -27,7 +26,7 @@ a:hover {
 }
 #banner{
   text-align: center;
-  background-image: url("images/Jar2.jpeg");
+  background-image: url("images/dessin356.png");
   background-size: cover;
   padding: 150px;
   color: white;

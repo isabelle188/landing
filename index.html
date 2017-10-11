@@ -5,8 +5,8 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
 
 
 <!DOCTYPE html>
-<html>
-<head>
+<html> <!-- Toute page débute comme cela -->
+<head> <!-- Le head gère en quelque sorte les commandes de ma page et indique au programme quoi aller chercher et où, ce qui y est écrit n'apparaît pas en navigation -->
 	<meta charset="utf-8">
 	<!-- Permet au site d'afficher les caractères spéciaux -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,9 +23,9 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
   	<!-- Lien qui permet de récupérer des mises en forme dans Bootstrap -->
 	<link href='style.css' rel='stylesheet'>
 	<!-- Lien qui renvoie vers le file de définition de style css. A toujours mettre en dernier du head pour que mes préférences soient appliquées par dessus -->
-</head>
+</head> <!-- Ceci est la clôture du head -->
 
-<body>
+<body> <!-- Le body est ce qui apparaît sur ma page -->
     <div id="banner">
     <!-- l'attribut banner permet de créer la "bannière" du site -->
     	<h1>Je fais le tri</h1>
@@ -41,6 +41,7 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
     </div>
 
     <div class="container">
+    <!-- Le class container permet d'organiser le contenu dans une sorte de tableau et va nous permettre ensuite de gérer le côté responsive de la page -->
     	<div class="row">
     		<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="card text-center">

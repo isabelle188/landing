@@ -1,7 +1,5 @@
-<!--
-Auteur : Isabelle MAURIQUOT
-Ceci est la manière d'écrire un commentaire et peut être implémenté partout dans le code.
--->
+<!-- Auteur : Isabelle MAURIQUOT -->
+<!-- Ceci est la manière d'écrire un commentaire et peut être implémenté partout dans le code.-->
 
 
 <!DOCTYPE html>
@@ -12,10 +10,10 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Permet au site d'être accessible pour des users de Edge -->
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<!-- Calcule la taile de l'écran -->
+  	<!-- Calcule la taille de l'écran -->
 	<title>Porsche Design Passion</title>
 	<!-- Titre qui apparaît sur l'onglet de navigation -->
-	<link href="https://fonts.googleapis.com/css?family=Mukta|Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Convergence|Mukta" rel="stylesheet">
 	<!-- Lien qui permet d'aller puiser les fonts spécifiques de Google -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- Lien qui permet de récupérer des icones dans Fontawesome -->
@@ -30,32 +28,33 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
     <!-- l'attribut banner permet de créer la "bannière" du site -->
     	<h1>Porsche Design Passion</h1>
     	<!-- ceci est le titre qui apparaît dans ma bannière  -->
-    	<p>From 356 to 911</p>
-    	<!-- Le p permet de créer un paragraphe -->
+    	<p>Classic & Sport</p>
+    	<!-- Le p permet de créer un paragraphe, d'écrire du texte -->
+        <!-- On peut aussi insérer une image comme ci-dessous. L'attribut src indique le fichier source, le alt indique l'info bulle et width permet de redimensionner ma photo -->
+        <img src="images/blason.jpg" alt="picture description" width="70">
     	<!-- Ici on pourrait créer un paragraphe contenant un lien. on le coderait comme suit : 
 			<p>
 			<a href="http://#" target="_blank" class="btn btn-info">Texte que je veux faire apparaître</a>
 			</p>
-    	Le href indique le lien en tant que tel, target indique au programme d'ouvrir le lien dans une nouvelle page ma class provient de bootstrap (le code a été copié collé directement, et le lien vers bootscrap correctement défini dans le head) -->
-    	<!-- On pourrait aussi insérer comme ceci une image :
-    		<img src="images/Logo poubelle.png" alt="picture description" width="100">
-    	src indique le fichier source, alt indique xxxxxxxxxxxxxxxx et width xxxxxxxxxx -->
-    </div>
+    	Le href indique le lien en tant que tel, target indique ici au programme d'ouvrir le lien dans une nouvelle page ma class provient de bootstrap (le code a été copié collé directement, et le lien vers bootscrap correctement défini dans le head) -->
+    </div> <!-- Clôture du banner -->
 
     <div class="container">
     <!-- Le class container permet d'organiser le contenu dans une sorte de tableau et va nous permettre ensuite de gérer le côté responsive de la page -->
     	<div class="row">
+        <!-- Il s'agit de ma première rangée -->    
     		<div class="col-xs-12 col-sm-6 col-md-3">
-    			<div class="card text-center">
+            <!-- C'est la 1ère case de ma rangée. La class permet de définir le responsive de ma page, "col-xs-12" pour le mobile, je dis à mon programme que ma case prend tout l'écran (il y a systématiquement 12 colonnes sur l'écran), "col-sm-6" pour les tablettes, moitié d'écran puis "col-md-3" enmode desktop, un quart d'écran. Mes autres div fonctionnent sur le même principe. Chaque div ouverte doit être fermée, d'où l'intérêt de bien indenter son code -->
+            	<div class="card text-center"> <!-- Important dans cette div il y a 2 classes du fait de l'espace. Si l'on oublie le tiret entre text et center, le programme considérerait qu'il y en a 3 -->
     			<h2>356</h2>
-    			<p>L'<strong>élégance</strong> indémodable</p>
-    			<img src="images/356.png" alt="picture description" width="100">
+    			<p>L'<strong>élégance</strong> indémodable</p> <!-- La balise strong permet de mettre du texte en gras -->
+    			<img src="images/356.png" alt="picture description" width="100"> <!-- Ici on pourrait ajouter une class d'image Bootscrap pour faire des arrondis, des ombres, etc -->
     			</div>
     		</div>
     		<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="card text-center">
-    			<h2>911</h2>
-    			<p>Courbes <strong>Mythiques</strong></p>
+    			<h2>911</h2> <!-- Le style de h2 est défini dans le style.css -->
+                <p>Courbes <strong>Mythiques</strong></p>
     			<img src="images/911.png" alt="picture description" width="100">
     			</div>
     		</div>
@@ -75,38 +74,44 @@ Ceci est la manière d'écrire un commentaire et peut être implémenté partout
     		</div>
     	</div>
     	<div class="row">
-    		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-    		<div id="wufoo-zynwe5v1duvrwk">
-    		Fill out my <a href="https://isabelle188.wufoo.com/forms/zynwe5v1duvrwk">online form</a>.
-    		</div>
-    		<script type="text/javascript">var zynwe5v1duvrwk;(function(d, t) {
-    		var s = d.createElement(t), options = {
-    		'userName':'isabelle188',
-    		'formHash':'zynwe5v1duvrwk',
-    		'autoResize':true,
-    		'height':'401',
-    		'async':true,
-    		'host':'wufoo.com',
-    		'header':'show',
-    		'ssl':true};
-    		s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-    		s.onload = s.onreadystatechange = function() {
-    		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-    		try { zynwe5v1duvrwk = new WufooForm();zynwe5v1duvrwk.initialize(options);zynwe5v1duvrwk.display(); } catch (e) {}};
-    		var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-    		})(document, 'script');</script>
-    		</div>
+        <!-- Dans cette seconde rangée, on vient coller le code généré par Wuffoo pour insérer un formulaire -->
+    		<div class="col-xs-12 col-sm-8 col-sm-offset-2"> <!-- Pour que la mise en forme du formulaire soit plus agréable à l'oeil on utilise le même type de class que pour le responsive. Ici on a ajouté le "col-sm-offset-2" la notion de offset indique au programme qu'il doit décaler mon formulaire de deux rangées -->
+            <!-- Ci dessous le code généré sur Wufoo et que l'on vient coller dans notre code-->
+            <div id="wufoo-m1qgipvs0dwgz9d">
+            Fill out my <a href="https://isabelle188.wufoo.com/forms/m1qgipvs0dwgz9d">online form</a>.
+            </div>
+                <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+                <script type="text/javascript">var m1qgipvs0dwgz9d;(function(d, t) {
+                var s = d.createElement(t), options = {
+                'userName':'isabelle188',
+                'formHash':'m1qgipvs0dwgz9d',
+                'autoResize':true,
+                'height':'584',
+                'async':true,
+                'host':'wufoo.com',
+                'header':'show',
+                'ssl':true};
+                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                s.onload = s.onreadystatechange = function() {
+                var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                try { m1qgipvs0dwgz9d = new WufooForm();m1qgipvs0dwgz9d.initialize(options);m1qgipvs0dwgz9d.display(); } catch (e) {}};
+                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                })(document, 'script');</script>
+                </div>
+            <!-- Fin du code importé de Wufoo -->
     	</div>
     </div>
   
-    <div id="footer">
+    <div id="footer"> <!-- A l'opposé de banner, on a le footer, le pied de page. On donne à notre case div l'attribut id="footer" puis on définit les caractéristiques dans style.css -->
     <p>This is a playground landing ©Le Wagon</p>
-    <ul class="list-inline">
-    	<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    <ul class="list-inline"> 
+    <!--La balise ul permet d'ouvrir une unordered list, ici on lui a attribué une class Bootscrap afin que les éléments de la liste apparraissent sans puce et en ligne. D'autre styles sont disponibles dans Bootscrap, il suffit de choisir la classe souhaitée -->
+    	<!-- Chaque élément de la liste ci-dessous (balise "li") contient un lien grâce à la balise "a" et est représenté par une icône grâce à la balise "i" qui possède un attribut class dont le code est importé depuis Fontawesome (au préalable correctement défini dans le head) -->
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
  		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
   		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
   		<li><a href="#"><i class="fa fa-github"></i></a></li>
-    </ul>
-  	</div>
-  </body>
-</html>
+    </ul> <!-- Clôture de la liste -->
+  	</div> <!-- Clôture du footer -->
+  </body> <!-- Clôture du body -->
+</html> <!-- Clôture de la page -->

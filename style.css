@@ -36,11 +36,11 @@ a:hover {
   text-shadow: 1px 1px 5px black;
 }
 #banner h1 {
-  color: rgb(187, 32, 36);
+  color: #FF0000;
   font-size: 50px;
 }
 #banner p {
-  color: rgb(187, 32, 36);
+  color: #FF0000;
   font-weight: bold;
   font-size: 40px;
   font-weight: lighter;

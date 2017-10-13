@@ -39,15 +39,6 @@
     	Le href indique le lien en tant que tel, target indique ici au programme d'ouvrir le lien dans une nouvelle page ma class provient de bootstrap (le code a été copié collé directement, et le lien vers bootscrap correctement défini dans le head) -->
     </div> <!-- Clôture du banner -->
 
-    <!-- Comment coder un formulaire de recherche : 
-    <div class="cta text-center">
-        <h2>Besoin d'aide ?</h2>
-        <p>Que recherchez-vous ?</p>
-        <form> action="/search" method="get" class="form-inline">...</form>
-    </div>
-    Fin du code formulaire-->
-
-
     <div class="container">
     <!-- Le class container permet d'organiser le contenu dans une sorte de tableau et va nous permettre ensuite de gérer le côté responsive de la page -->
     	<div class="row">
@@ -57,28 +48,28 @@
             	<div class="card text-center"> <!-- Important dans cette div il y a 2 classes du fait de l'espace. Si l'on oublie le tiret entre text et center, le programme considérerait qu'il y en a 3 -->
     			<h2>356</h2>
     			<p>L'<strong>élégance</strong> indémodable</p> <!-- La balise strong permet de mettre du texte en gras -->
-    			<img src="images/356.png" alt="picture description" width="100"> <!-- Ici on pourrait ajouter une class d'image Bootscrap pour faire des arrondis, des ombres, etc -->
+    			<img src="images/356.png" alt="picture description" width="150"> <!-- Ici on pourrait ajouter une class d'image Bootscrap pour faire des arrondis, des ombres, etc -->
     			</div>
     		</div>
     		<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="card text-center">
     			<h2>911</h2> <!-- Le style de h2 est défini dans le style.css -->
                 <p>Courbes <strong>Mythiques</strong></p>
-    			<img src="images/911.png" alt="picture description" width="100">
+    			<img src="images/911.png" alt="picture description" width="150">
     			</div>
     		</div>
     		<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="card text-center">
     			<h2>Courses</h2>
     			<p>Porsche <strong>919</strong> Hybrid</p>
-    			<img src="images/courses.png" alt="picture description" width="70">
+    			<img src="images/courses.png" alt="picture description" width="150">
     			</div>
     		</div>
     		<div class="col-xs-12 col-sm-6 col-md-3">
     			<div class="card text-center">
     			<h2>Lifestyle</h2>
     			<p>German <strong>sport</strong> brand</p>
-    			<img src="images/lifestyle.png" alt="picture description" width="70">
+    			<img src="images/lifestyle.png" alt="picture description" width="150">
     			</div>
     		</div>
     	</div>
@@ -111,15 +102,26 @@
     	</div>
     </div>
   
+<!-- Comment coder un formulaire de recherche : -->
+     <div class="cta text-center">
+      <h2>Recherchez un article</h2>
+      <p>Tapez un mot clé</p>
+
+      <form action="/search" method="get" class="form-inline">
+        <input type="text" name="query" placeholder="Search dribbles..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-red">
+      </form>
+    </div>
+    <!-- Fin du code formulaire-->
+
     <div id="footer"> <!-- A l'opposé de banner, on a le footer, le pied de page. On donne à notre case div l'attribut id="footer" puis on définit les caractéristiques dans style.css -->
-    <p>This is a playground landing ©Le Wagon</p>
+    <p>Proudly made by Isa - Inspired by ©Le Wagon</p>
     <ul class="list-inline"> 
     <!--La balise ul permet d'ouvrir une unordered list, ici on lui a attribué une class Bootscrap afin que les éléments de la liste apparraissent sans puce et en ligne. D'autre styles sont disponibles dans Bootscrap, il suffit de choisir la classe souhaitée -->
     	<!-- Chaque élément de la liste ci-dessous (balise "li") contient un lien grâce à la balise "a" et est représenté par une icône grâce à la balise "i" qui possède un attribut class dont le code est importé depuis Fontawesome (au préalable correctement défini dans le head) -->
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li> 
- 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-  		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-  		<li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com/user/Porsche"><i class="fa fa-youtube"></i></a></li> 
+ 		<li><a href="https://www.facebook.com/porsche/"><i class="fa fa-facebook"></i></a></li>
+  		<li><a href="https://twitter.com/Porsche"><i class="fa fa-twitter"></i></a></li>
     </ul> <!-- Clôture de la liste -->
   	</div> <!-- Clôture du footer -->
   </body> <!-- Clôture du body -->

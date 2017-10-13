@@ -62,18 +62,24 @@ a:hover {
 }
 
 #footer a{
-	color: #49A5FF;
+	color: #FF0000;
 	font-size: 20px;
 }
 
 #footer a:hover{
-	color: rgb(187, 32, 36);
+	color: rgb(255,255,255);
 	font-size: 30px;
 }
+ #footer p{
+  font-size: 10px
+ }
 
-/* A terminer, code le style de la class cta pour le formulaire de recherche
 .cta {
   padding: 30px;
-  
+  background: grey;
+
 }
- */
+
+.cta h2{
+  color: rgb(187, 32, 36)
+}
